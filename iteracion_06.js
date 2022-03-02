@@ -1,0 +1,1 @@
+const joke = ['Mesirve', 'Cristiano Romualdo', 'Fernando Muralla', 'Ronalguiño']
