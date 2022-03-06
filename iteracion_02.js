@@ -33,19 +33,22 @@ const users = [
     },
 ]
 
-let sum = 0
-let counter = 0
+let count = 0
+let array = []
 
 for (let user of users) {
-    sum = 0
-    counter = 0
+
+
     for (let sound in user.favoritesSounds) {
 
-        sum += user.favoritesSounds[sound].volume
-        counter++
+        sum += sound
+        array.push(sum)
     }
 
-    console.log("La media del sonido favorito de " + user.name + " es: " + (sum / counter))
+
 }
 
-
+array.forEach((o) => {
+    count[o] = (count[o] || 0) + 1;
+});
+console.log(count)

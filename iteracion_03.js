@@ -32,3 +32,18 @@ const users = [
         }
     },
 ]
+let count = {};
+let array = [];
+
+
+for (let list of users) {
+    for (let musicSounds in list.favoritesSounds) {
+        array.push(musicSounds);
+    }
+}
+
+arr.forEach((param) => {
+    count[param] = (count[param] || 0) + 1;
+});
+
+console.log(count);
